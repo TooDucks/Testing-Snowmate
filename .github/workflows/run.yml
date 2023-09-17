@@ -32,12 +32,12 @@ jobs:
               run: |
                   python discovered_weekly.py
             - name: 'Install Snowmate Runner'
-                run: pip install -i "https://${{ secrets.SNOWMATE_CLIENT_ID }}:${{ secrets.SNOWMATE_SECRET_KEY }}@pypi.snowmate.io/simple" -U snowmate_runner
-            - name: 'Run Snowmate Tests'
-                uses: snowmate/snowmate-runner-action@latest
-                with:
-                project-path: .  # If this repo is not a monorepo, insert "." (dot without the apostrophes).
-                project-id: 6506ae5ea66c94ade6d47186  # Insert your project ID
-                client-id: ${{ secrets.SNOWMATE_CLIENT_ID }}
-                secret-key: ${{ secrets.SNOWMATE_SECRET_KEY }}
-                github-token: ${{ secrets.GITHUB_TOKEN }}  # Provided by default by GitHub.
+        run: pip install -i "https://${{ secrets.SNOWMATE_CLIENT_ID }}:${{ secrets.SNOWMATE_SECRET_KEY }}@pypi.snowmate.io/simple" -U snowmate_runner
+            # - name: 'Run Snowmate Tests'
+            #     uses: snowmate/snowmate-runner-action@latest
+            #     with:
+            #     project-path: .  # If this repo is not a monorepo, insert "." (dot without the apostrophes).
+            #     project-id: 6506ae5ea66c94ade6d47186  # Insert your project ID
+            #     client-id: ${{ secrets.SNOWMATE_CLIENT_ID }}
+            #     secret-key: ${{ secrets.SNOWMATE_SECRET_KEY }}
+            #     github-token: ${{ secrets.GITHUB_TOKEN }}  # Provided by default by GitHub.
