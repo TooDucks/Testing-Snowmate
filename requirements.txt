@@ -4,4 +4,3 @@ python-dotenv==1.0.0
 snowmate_collector==0.0.58
 spotipy==2.18.0
 loguru
-opentelemetry
