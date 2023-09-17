@@ -1,13 +1,17 @@
 name: discovered-weekly
 
+# on:
+#     workflow_dispatch:
+#     schedule:
+#         # Run every Tuesday at 0 UTC
+#         - cron: "0 0 * * 2"
 on:
-    workflow_dispatch:
-    schedule:
-        # Run every Tuesday at 0 UTC
-        - cron: "0 0 * * 2"
-
+  pull_request:
 jobs:
-    build:
+  run-tests:
+
+# jobs:
+    # build:
         runs-on: ubuntu-latest
 
         steps:
@@ -40,3 +44,6 @@ jobs:
                 client-id: ${{ secrets.SNOWMATE_CLIENT_ID }}
                 secret-key: ${{ secrets.SNOWMATE_SECRET_KEY }}
                 github-token: ${{ secrets.GITHUB_TOKEN }}  # Provided by default by GitHub.
+
+          
+          
