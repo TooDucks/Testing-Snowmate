@@ -29,8 +29,7 @@ jobs:
                   USERNAME: ${{ secrets.USERNAME }}
                   DISCOVER_WEEKLY_PLAYLIST_ID: ${{ secrets.DISCOVER_WEEKLY_PLAYLIST_ID }}
                   ALL_DISCOVERED_PLAYLIST_ID: ${{ secrets.ALL_DISCOVERED_PLAYLIST_ID }}
-              run: |
-                  python discovered_weekly.py
+              run: python discovered_weekly.py
             #     - name: 'Install Snowmate Runner'
             # run: pip install -i "https://${{ secrets.SNOWMATE_CLIENT_ID }}:${{ secrets.SNOWMATE_SECRET_KEY }}@pypi.snowmate.io/simple" -U snowmate_runner
             # - name: 'Run Snowmate Tests'
