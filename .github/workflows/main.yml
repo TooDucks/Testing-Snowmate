@@ -1,0 +1,41 @@
+name: discovered-weekly
+
+on:
+  pull_request:
+    paths: 
+      - '.'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Set up Python 3.10
+              uses: actions/setup-python@v4
+              with:
+                  python-version: "3.10"
+            - name: Install dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install -r requirements.txt
+            - name: Run discovered weekly
+              env:
+                  CLIENT_ID: ${{ secrets.CLIENT_ID }}
+                  CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+                  REDIRECT_URI: ${{ secrets.REDIRECT_URI }}
+                  REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+                  USERNAME: ${{ secrets.USERNAME }}
+                  DISCOVER_WEEKLY_PLAYLIST_ID: ${{ secrets.DISCOVER_WEEKLY_PLAYLIST_ID }}
+                  ALL_DISCOVERED_PLAYLIST_ID: ${{ secrets.ALL_DISCOVERED_PLAYLIST_ID }}
+              run: python discovered_weekly.py
+            - name: 'Install Snowmate Runner'
+              run: pip install -i "https://${{ secrets.SNOWMATE_CLIENT_ID }}:${{ secrets.SNOWMATE_SECRET_KEY }}@pypi.snowmate.io/simple" -U snowmate_runner
+            - name: 'Run Snowmate Tests'
+              uses: snowmate/snowmate-runner-action@latest
+              with:
+                project-path: .  # If this repo is not a monorepo, insert "." (dot without the apostrophes).
+                project-id: 6506ae5ea66c94ade6d47186  # Insert your project ID
+                client-id: ${{ secrets.SNOWMATE_CLIENT_ID }}
+                secret-key: ${{ secrets.SNOWMATE_SECRET_KEY }}
+                github-token: ${{ secrets.GITHUB_TOKEN }}  # Provided by default by GitHub.
