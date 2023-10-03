@@ -101,12 +101,12 @@ def trainRouteClient():
 
 port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
-    # PROJECT_ID = "650c6fe0a66c94ade6d4718d"
-    # SNOWMATE_CLIENT_ID = "5bce3783-b47c-4dbe-9322-f3cdbae21b6a"
-    # SNOWMATE_CLIENT_SECRET = "0df1783e-fa9e-420f-a9f2-72396be9a1d4"
-    PROJECT_ID = "650a786ba66c94ade6d4718b"
-    SNOWMATE_CLIENT_ID = "2c7508a0-b155-4440-ada8-b97fd1d519ad"
-    SNOWMATE_CLIENT_SECRET = "f2cc9bd1-13d1-4a9c-8473-838b9b863fb9"
+    PROJECT_ID = "650c6fe0a66c94ade6d4718d"
+    SNOWMATE_CLIENT_ID = "5bce3783-b47c-4dbe-9322-f3cdbae21b6a"
+    SNOWMATE_CLIENT_SECRET = "0df1783e-fa9e-420f-a9f2-72396be9a1d4"
+    # PROJECT_ID = "650a786ba66c94ade6d4718b"
+    # SNOWMATE_CLIENT_ID = "2c7508a0-b155-4440-ada8-b97fd1d519ad"
+    # SNOWMATE_CLIENT_SECRET = "f2cc9bd1-13d1-4a9c-8473-838b9b863fb9"
     snowmate_collector.start(
         sanity=False,
         project_path="/mnt/c/Work/wafer_circleci",
