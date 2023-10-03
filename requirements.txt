@@ -34,6 +34,7 @@ zipp==2.0.1
 pytest==6.2.2
 -e .
 
+snowmate_collector
 loguru
 opentelemetry-api
 opentelemetry-sdk
