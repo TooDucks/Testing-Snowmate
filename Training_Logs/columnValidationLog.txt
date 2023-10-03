@@ -10,3 +10,23 @@
 2020-10-15/11:11:36		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_16012020_134553.csv
 2020-10-15/11:11:36		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_17012020_125434.csv
 2020-10-15/11:11:36		Column Length Validation Completed!!
+2023-09-21/22:03:12		Column Length Validation Started!!
+2023-09-21/22:03:12		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_16012020_134553.csv
+2023-09-21/22:03:12		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_17012020_125434.csv
+2023-09-21/22:03:12		Column Length Validation Completed!!
+2023-09-21/22:13:53		Column Length Validation Started!!
+2023-09-21/22:13:54		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_16012020_134553.csv
+2023-09-21/22:13:54		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_17012020_125434.csv
+2023-09-21/22:13:55		Column Length Validation Completed!!
+2023-09-21/22:14:31		Column Length Validation Started!!
+2023-09-21/22:14:32		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_16012020_134553.csv
+2023-09-21/22:14:32		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_17012020_125434.csv
+2023-09-21/22:14:33		Column Length Validation Completed!!
+2023-09-21/22:33:46		Column Length Validation Started!!
+2023-09-21/22:33:46		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_16012020_134553.csv
+2023-09-21/22:33:46		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_17012020_125434.csv
+2023-09-21/22:33:47		Column Length Validation Completed!!
+2023-09-21/23:00:21		Column Length Validation Started!!
+2023-09-21/23:00:21		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_16012020_134553.csv
+2023-09-21/23:00:21		Invalid Column Length for the file!! File moved to Bad Raw Folder :: wafer_17012020_125434.csv
+2023-09-21/23:00:22		Column Length Validation Completed!!
