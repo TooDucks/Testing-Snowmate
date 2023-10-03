@@ -117,7 +117,7 @@ if __name__ == "__main__":
         # metrics_sink=snowmate_collector.MetricsDataSinks.PRINT,
         _sampling_percentage=20,
     )
-    path="Prediction_Batch_Files"
+    path="Prediction_Batch_files"
     pred_val = pred_validation(path)  # object initialization
     pred_val.prediction_validation()  # calling the prediction_validation function
     pred = prediction(path)  # object initialization
