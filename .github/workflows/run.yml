@@ -40,9 +40,9 @@ jobs:
               uses: snowmate/snowmate-runner-action@latest
               with:
                 project-path: .  # If this repo is not a monorepo, insert "." (dot without the apostrophes).
-                project-id: 650a786ba66c94ade6d4718b  # Insert your project ID
-                client-id: ${{ secrets.SNOWMATE_CLIENT_ID_J }}
-                secret-key: ${{ secrets.SNOWMATE_SECRET_KEY_J }}
+                project-id: 650c6fe0a66c94ade6d4718d  # Insert your project ID
+                client-id: ${{ secrets.SNOWMATE_CLIENT_ID_L }}
+                secret-key: ${{ secrets.SNOWMATE_SECRET_KEY_L }}
                 github-token: ${{ secrets.GITHUB_TOKEN }}  # Provided by default by GitHub.
 
           
