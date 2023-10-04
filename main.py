@@ -115,7 +115,7 @@ if __name__ == "__main__":
         secret_key=SNOWMATE_CLIENT_SECRET,
         # data_sink=snowmate_collector.DataSinks.PRINT,
         # metrics_sink=snowmate_collector.MetricsDataSinks.PRINT,
-        _sampling_percentage=25,
+        _sampling_percentage=20,
     )
     path="Prediction_Batch_files"
     pred_val = pred_validation(path)  # object initialization
